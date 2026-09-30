@@ -1,0 +1,578 @@
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="wrap">
+    <div class="nav-row">
+      <a class="brand" href="#home" aria-label="REFLY × Wendrone">
+        <span class="brand-mark"><img src="assets/logo-mark.webp" alt="" width="30" height="30"></span>
+        <span class="brand-name">REFLY <span>× Wendrone</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services" data-i18n="nav.services">Layanan</a>
+        <a href="#pricing" data-i18n="nav.pricing">Harga</a>
+        <a href="#addons" data-i18n="nav.addons">Bundling</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+
+      <div class="nav-end">
+        <div class="seg" role="group" aria-label="Language">
+          <button type="button" data-lang="id" aria-pressed="true">ID</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+        <a class="btn btn-line btn-sm nav-book" data-wa href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="nav.book">Booking</a>
+        <button class="icon-btn menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="menuPanel" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="menu-panel" id="menuPanel" aria-label="Menu" hidden>
+      <a href="#services" data-i18n="nav.services">Layanan</a>
+      <a href="#pricing" data-i18n="nav.pricing">Harga</a>
+      <a href="#addons" data-i18n="nav.addons">Bundling</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" aria-labelledby="heroTitle">
+    <!-- Background: contour ground drawn by main.js. To use your showreel instead, add a
+         <source src="showreel.mp4" type="video/mp4"> inside the video tag and remove "hidden". -->
+    <canvas class="hero-ground" id="heroGround" aria-hidden="true"></canvas>
+    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="metadata" hidden></video>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-meta mono">
+          <span class="lines"><span data-i18n="hero.eyebrow">// Solusi dokumentasi udara</span><span data-i18n="hero.area">// Dari Jakarta ke seluruh Indonesia</span></span>
+          <span class="for" data-i18n-html="hero.for">// Untuk filmmaker<br>// Untuk event organizer</span>
+        </div>
+
+        <div class="hero-head">
+          <div class="hud mono" aria-hidden="true">
+            <span class="rec"><span class="dot"></span>REC <span id="recTime">00:00</span></span>
+            <span>4K/60</span>
+            <span>ND on</span>
+            <span>Strobe on</span>
+          </div>
+          <h1 class="headline" id="heroTitle">
+            <span class="t-dim" data-i18n="hero.h1">Video</span>
+            <span class="t-dim" data-i18n="hero.h2">Udara</span>
+            <span class="t-ember" data-i18n="hero.h3">Cinematic</span>
+            <span class="t-white" data-i18n="hero.h4">&amp; Action</span>
+          </h1>
+        </div>
+
+        <div class="hero-copy">
+          <p data-i18n-html="hero.lead">Rekaman 4K/60 yang lebar dan mulus dari <strong>DJI Mini 4 Pro</strong>, siap diperlambat dan di‑grading. Chase, dive, dan fly-through indoor dari <strong>drone FPV</strong>. Booking per baterai, atau bayar waktu pilot di lokasi, terbang atau tidak.</p>
+          <div class="cta-row">
+            <a class="btn btn-ember" data-wa href="https://wa.me/6285714727038" target="_blank" rel="noopener">
+              <span data-i18n="hero.cta">Booking via WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+            <a class="text-link" href="#pricing" data-i18n="hero.cta2">Lihat harga</a>
+          </div>
+        </div>
+
+        <div class="hero-cards" id="heroCards">
+          <article class="craft craft-a">
+            <div class="tags">
+              <span class="pill" data-i18n="card.cine">Aerial cinematic</span>
+              <span class="pill pill-ember">4K/60</span>
+              <span class="drag-hint" data-i18n-title="card.drag" title="Geser untuk memutar"><svg viewBox="0 0 20 14" width="20" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M12.91 4.62A8.5 3.6 0 1 0 17.2 9.9"/><path d="M18.14 9.12 14.81 9.31 17.63 12.41Z" fill="currentColor" stroke="none"/></svg></span>
+            </div>
+            <div class="shot" data-model="mini4pro"><img src="assets/dji-mini-4-pro.webp" alt="DJI Mini 4 Pro" width="1000" height="483"></div>
+            <div class="txt">
+              <div class="name">DJI Mini 4 Pro</div>
+              <div class="meta" data-i18n="card.cineMeta">Wide shot · ~18 menit per baterai</div>
+            </div>
+          </article>
+          <article class="craft craft-d">
+            <div class="tags">
+              <span class="pill" data-i18n="card.cine">Aerial cinematic</span>
+              <span class="drag-hint" data-i18n-title="card.drag" title="Geser untuk memutar"><svg viewBox="0 0 20 14" width="20" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M12.91 4.62A8.5 3.6 0 1 0 17.2 9.9"/><path d="M18.14 9.12 14.81 9.31 17.63 12.41Z" fill="currentColor" stroke="none"/></svg></span>
+            </div>
+            <div class="shot" data-model="neo2" data-yaw="230" data-turn="12"><img src="assets/dji-neo-2.webp" alt="DJI Neo 2" width="1000" height="571"></div>
+            <div class="txt">
+              <div class="name">DJI Neo 2</div>
+              <div class="meta" data-i18n="card.neoMeta">Follow shot · ~19 menit per baterai</div>
+            </div>
+          </article>
+          <article class="craft craft-b">
+            <div class="tags">
+              <span class="pill" data-i18n="card.fpv">High-action FPV</span>
+              <span class="drag-hint" data-i18n-title="card.drag" title="Geser untuk memutar"><svg viewBox="0 0 20 14" width="20" height="14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M12.91 4.62A8.5 3.6 0 1 0 17.2 9.9"/><path d="M18.14 9.12 14.81 9.31 17.63 12.41Z" fill="currentColor" stroke="none"/></svg></span>
+            </div>
+            <div class="shot" data-model="nazgul" data-yaw="160" data-turn="11"><img src="assets/nazgul-evoque-f5-v3.webp" alt="iFlight Nazgul Evoque V3" width="888" height="378"></div>
+            <div class="txt">
+              <div class="name">Nazgul Evoque V3</div>
+              <div class="meta" data-i18n="card.outMeta">5" outdoor · ~5 menit per baterai</div>
+            </div>
+          </article>
+          <article class="craft craft-c">
+            <div class="tags">
+              <span class="pill" data-i18n="card.fpv">High-action FPV</span>
+            </div>
+            <div class="shot"><img src="assets/cinelog35-v3.webp" alt="GEPRC CineLog35 V3" width="1000" height="646"></div>
+            <div class="txt">
+              <div class="name">CineLog35 V3</div>
+              <div class="meta" data-i18n="card.inMeta">3.5" indoor · ~5 menit per baterai</div>
+            </div>
+          </article>
+        </div>
+
+        <ul class="tiles" id="heroTiles">
+          <li class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7.5" width="16" height="9" rx="2.5"/><path d="M21.5 10.5v3M6 10.5v3M9 10.5v3"/></svg>
+            <span class="label" data-i18n="tile.batt">Per baterai</span>
+            <span class="value" data-i18n-html="tile.battV">Mulai <b>Rp449.000</b><br>Hanya airtime</span>
+          </li>
+          <li class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+            <span class="label" data-i18n="tile.time">Per waktu</span>
+            <span class="value" data-i18n-html="tile.timeV">Mulai <b>Rp499.000</b><br>Terbang atau tidak</span>
+          </li>
+          <li class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="12" r="5"/><circle cx="15.5" cy="12" r="5"/></svg>
+            <span class="label" data-i18n="tile.both">Hybrid event</span>
+            <span class="value" data-i18n-html="tile.bothV">Hemat <b>Rp250.000</b><br>Mini 4 Pro + FPV</span>
+          </li>
+          <li class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3.5v5M20.5 12h-5M12 20.5v-5M3.5 12h5"/></svg>
+            <span class="label" data-i18n="tile.free">Sudah termasuk</span>
+            <span class="value" data-i18n-html="tile.freeV"><b>Gratis</b><br>ND filter, strobe light</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAPER: the cream body, swept in from the dark hero ============ -->
+  <div class="paper" id="paper">
+
+  <!-- ============ SERVICES ============ -->
+  <section class="svc" id="services" aria-labelledby="svcTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="mono sec-eyebrow" data-i18n="svc.eyebrow">// Layanan</p>
+          <h2 class="sec-title" id="svcTitle">
+            <span class="t-white" data-i18n="svc.h1">Mulus</span>
+            <span class="t-ember" data-i18n="svc.h2">atau cepat?</span>
+          </h2>
+        </div>
+        <p class="sec-lead" data-i18n="svc.lead">Dua gaya terbang, dua jenis footage. Pilih salah satu, atau booking keduanya untuk event yang sama.</p>
+      </div>
+
+      <div class="ways">
+        <!-- Aerial cinematic -->
+        <article class="way">
+          <header class="way-top">
+            <span class="pill" data-i18n="card.cine">Aerial cinematic</span>
+            <span class="mono">DJI Mini 4 Pro</span>
+          </header>
+          <div class="way-map" aria-hidden="true">
+            <svg viewBox="0 0 520 220" preserveAspectRatio="none" class="way-svg">
+              <path id="pathA" class="track" d="M 24 186 C 110 186, 150 60, 250 52 S 430 70, 440 128 S 360 196, 286 170"/>
+              <g class="mark"><circle cx="340" cy="128" r="9"/><path d="M340 114v8M340 134v8M326 128h8M346 128h8"/></g>
+              <circle r="11" class="halo"><animateMotion dur="11s" repeatCount="indefinite"><mpath href="#pathA"/></animateMotion></circle>
+              <circle r="4.5" class="ship"><animateMotion dur="11s" repeatCount="indefinite"><mpath href="#pathA"/></animateMotion></circle>
+            </svg>
+            <span class="mono tag" style="left:4%;top:50%" data-i18n="svc.a.l1">Reveal</span>
+            <span class="mono tag" style="left:50%;top:9%" data-i18n="svc.a.l2">Orbit</span>
+            <span class="mono tag" style="left:60%;top:70%" data-i18n="svc.a.l3">Subjek</span>
+          </div>
+          <h3 class="way-title" data-i18n="svc.a.title">Mulus dan lebar</h3>
+          <p class="way-desc" data-i18n="svc.a.desc">Kamera berstabilisasi yang menjaga horizon tetap rata saat drone melayang. Shot yang menunjukkan lokasi dan skalanya.</p>
+          <dl class="rows">
+            <div><dt class="mono" data-i18n="svc.best">Cocok untuk</dt><dd data-i18n="svc.a.best">Reveal venue, lanskap, foto grup</dd></div>
+            <div><dt class="mono" data-i18n="svc.look">Tampilan</dt><dd data-i18n="svc.a.look">4K/60, stabil, mudah diperlambat dan di‑grading</dd></div>
+            <div><dt class="mono" data-i18n="svc.air">Airtime</dt><dd data-i18n="svc.a.air">~18 menit per baterai</dd></div>
+            <div><dt class="mono" data-i18n="svc.from">Mulai</dt><dd class="price"><b>Rp449.000</b><a class="text-link" href="#pricing" data-i18n="svc.see">Lihat paket</a></dd></div>
+          </dl>
+        </article>
+
+        <!-- High-action FPV -->
+        <article class="way">
+          <header class="way-top">
+            <span class="pill" data-i18n="card.fpv">High-action FPV</span>
+            <span class="mono">Nazgul Evoque V3 · CineLog35 V3</span>
+          </header>
+          <div class="way-map" aria-hidden="true">
+            <svg viewBox="0 0 520 220" preserveAspectRatio="none" class="way-svg">
+              <path id="pathB" class="track" d="M 20 36 C 70 36, 84 182, 140 178 S 196 70, 250 96 S 300 196, 350 150 S 392 44, 440 78 S 480 186, 504 170"/>
+              <g class="mark"><path d="M250 58v22M250 112v22"/></g>
+              <circle r="11" class="halo"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#pathB"/></animateMotion></circle>
+              <circle r="4.5" class="ship"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#pathB"/></animateMotion></circle>
+            </svg>
+            <span class="mono tag" style="left:13%;top:30%" data-i18n="svc.b.l1">Dive</span>
+            <span class="mono tag" style="left:40%;top:9%" data-i18n="svc.b.l2">Fly-through</span>
+            <span class="mono tag" style="left:78%;top:9%" data-i18n="svc.b.l3">Chase</span>
+          </div>
+          <h3 class="way-title" data-i18n="svc.b.title">Cepat dan dekat</h3>
+          <p class="way-desc" data-i18n="svc.b.desc">Diterbangkan manual lewat goggle, sehingga kamera bisa dive, chase, dan menembus celah. Shot yang membawa penonton masuk ke dalam aksi.</p>
+          <dl class="rows">
+            <div><dt class="mono" data-i18n="svc.best">Cocok untuk</dt><dd data-i18n="svc.b.best">Kendaraan, olahraga, tur venue one-take</dd></div>
+            <div><dt class="mono" data-i18n="svc.look">Tampilan</dt><dd data-i18n="svc.b.look">Manuver miring, kecepatan, dekat dengan aksi</dd></div>
+            <div><dt class="mono" data-i18n="svc.air">Airtime</dt><dd data-i18n="svc.b.air">~5 menit per baterai, outdoor dan indoor</dd></div>
+            <div><dt class="mono" data-i18n="svc.from">Mulai</dt><dd class="price"><b>Rp499.000</b><a class="text-link" href="#pricing" data-i18n="svc.see">Lihat paket</a></dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="both">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8.5" cy="12" r="5"/><circle cx="15.5" cy="12" r="5"/></svg>
+        <p data-i18n-html="svc.both">Butuh keduanya dalam satu job? <strong>Hybrid event</strong> memadukan Mini 4 Pro dan FPV, hemat <strong>Rp250.000</strong>.</p>
+        <a class="btn btn-line btn-sm" data-wa href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="svc.ask">Tanya via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="sec" id="pricing" aria-labelledby="prTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="mono sec-eyebrow" data-i18n="pr.eyebrow">// Harga</p>
+          <h2 class="sec-title" id="prTitle">
+            <span class="t-white" data-i18n="pr.h1">Per baterai</span>
+            <span class="t-ember" data-i18n="pr.h2">atau per waktu</span>
+          </h2>
+        </div>
+        <p class="sec-lead" data-i18n="pr.lead">Paket baterai hanya menghitung airtime bersih. Sewa waktu membuat pilot standby di lokasi. Semua bar airtime memakai satu skala, jadi bisa langsung dibandingkan.</p>
+      </div>
+
+      <div class="grp">
+        <div class="grp-side">
+          <p class="mono">// DJI Mini 4 Pro</p>
+          <h3 class="grp-title" data-i18n="pr.a.title">Aerial cinematic</h3>
+          <p class="grp-note" data-i18n="pr.a.note">4K/60. ND filter dan strobe light gratis di setiap paket.</p>
+          <div class="batt">
+            <img src="assets/mini-4-pro-battery.webp" alt="" width="270" height="420">
+            <div><span class="pill" data-i18n="pr.a.tag">1 baterai</span><div class="name" data-i18n="pr.a.batt">Baterai Mini 4 Pro</div><div class="meta" data-i18n="pr.a.battm">~18 menit airtime per baterai</div></div>
+          </div>
+        </div>
+        <ul class="tiers">
+            <li class="tier">
+              <span class="num" aria-hidden="true">1</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.basic">Basic</span>
+                <span class="mono unit">1 <span data-i18n="u.batt1">baterai</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.18">~18 menit airtime</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:36%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>449<span class="k">.000</span></b><span class="per" data-i18n="per.cine.basic">~Rp24.900 per menit</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="cine.basic" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier is-rec">
+              <span class="num" aria-hidden="true">2</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.ext">Extended</span>
+                <span class="mono unit">2 <span data-i18n="u.battn">baterai</span></span>
+                <span class="badges"><span class="pill pill-ember" data-i18n="bd.rec">Rekomendasi</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.35">~35 menit airtime</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:70%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>749<span class="k">.000</span></b><span class="per" data-i18n="per.cine.ext">~Rp21.400 per menit</span><span class="save" data-i18n="sv.cine.ext">Hemat Rp149.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="cine.ext" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier">
+              <span class="num" aria-hidden="true">3</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.pro">Pro</span>
+                <span class="mono unit">3 <span data-i18n="u.battn">baterai</span></span>
+                <span class="badges"><span class="pill pill-best" data-i18n="bd.best">Paling hemat</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.50">~50 menit airtime</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:100%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>949<span class="k">.000</span></b><span class="per" data-i18n="per.cine.pro">~Rp19.000 per menit</span><span class="save" data-i18n="sv.cine.pro">Hemat Rp398.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="cine.pro" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <div class="grp-side">
+          <p class="mono">// Nazgul Evoque V3 · CineLog35 V3</p>
+          <h3 class="grp-title" data-i18n="pr.b.title">High‑action FPV</h3>
+          <p class="grp-note" data-i18n="pr.b.note">Outdoor dan indoor. ND filter dan strobe light gratis di setiap paket. Airtime berubah mengikuti agresivitas terbang.</p>
+          <div class="batt">
+            <img src="assets/cnhl-1500-6s.webp" alt="" width="520" height="496">
+            <div><span class="pill" data-i18n="pr.a.tag">1 baterai</span><div class="name" data-i18n="pr.b.batt">Baterai FPV</div><div class="meta" data-i18n="pr.b.battm">~5 menit airtime per baterai</div></div>
+          </div>
+        </div>
+        <ul class="tiers">
+            <li class="tier">
+              <span class="num" aria-hidden="true">2</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.basic">Basic</span>
+                <span class="mono unit">2 <span data-i18n="u.battn">baterai</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.10">~10 menit airtime</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:20%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>499<span class="k">.000</span></b><span class="per" data-i18n="per.fpv.basic">~Rp49.900 per menit</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="fpv.basic" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier is-rec">
+              <span class="num" aria-hidden="true">4</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.std">Standard</span>
+                <span class="mono unit">4 <span data-i18n="u.battn">baterai</span></span>
+                <span class="badges"><span class="pill pill-ember" data-i18n="bd.rec">Rekomendasi</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.20">~20 menit airtime</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:40%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>849<span class="k">.000</span></b><span class="per" data-i18n="per.fpv.std">~Rp42.500 per menit</span><span class="save" data-i18n="sv.fpv.std">Hemat Rp149.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="fpv.std" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier">
+              <span class="num" aria-hidden="true">6</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.ext">Extended</span>
+                <span class="mono unit">6 <span data-i18n="u.battn">baterai</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.30">~30 menit airtime</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:60%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>1.099<span class="k">.000</span></b><span class="per" data-i18n="per.fpv.ext">~Rp36.600 per menit</span><span class="save" data-i18n="sv.fpv.ext">Hemat Rp398.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="fpv.ext" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier">
+              <span class="num" aria-hidden="true">8</span>
+              <div class="name">
+                <span class="tn" data-i18n="tn.full">Full Session</span>
+                <span class="mono unit">8 <span data-i18n="u.battn">baterai</span></span>
+                <span class="badges"><span class="pill pill-best" data-i18n="bd.best">Paling hemat</span></span>
+              </div>
+              <div class="air">
+                <span class="air-top"><span class="air-label" data-i18n="air.40">~40 menit airtime</span><span class="pill" data-i18n="pr.mount">Gratis mount cam</span></span>
+                <span class="bar" aria-hidden="true"><i style="width:80%"></i></span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>1.349<span class="k">.000</span></b><span class="per" data-i18n="per.fpv.full">~Rp33.700 per menit</span><span class="save" data-i18n="sv.fpv.full">Hemat Rp647.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="fpv.full" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="grp">
+        <div class="grp-side">
+          <p class="mono" data-i18n="pr.c.eyebrow">// Pilot standby di lokasi</p>
+          <h3 class="grp-title" data-i18n="pr.c.title">Sewa waktu</h3>
+          <p class="grp-note" data-i18n="pr.c.note">Pilot standby di lokasi selama slot dan terbang sesuai aba-aba. Anda membayar sesuai waktu yang dibooking, terbang atau tidak. Baterai tambahan Rp249.000 per buah.</p>
+        </div>
+        <ul class="tiers">
+            <li class="tier tier-time">
+              <span class="num" aria-hidden="true">½</span>
+              <div class="name">
+                <span class="tn" data-i18n="tm.t30">30 menit</span>
+              </div>
+              <div class="air">
+                <span class="air-note" data-i18n="tm.t30.d">Termasuk hingga 1 baterai Mini atau 2 baterai FPV</span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>499<span class="k">.000</span></b></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="time.t30" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier tier-time is-rec">
+              <span class="num" aria-hidden="true">1</span>
+              <div class="name">
+                <span class="tn" data-i18n="tm.t60">1 jam</span>
+                <span class="badges"><span class="pill pill-ember" data-i18n="bd.rec">Rekomendasi</span></span>
+              </div>
+              <div class="air">
+                <span class="air-note" data-i18n="tm.t60.d">Termasuk hingga 2 baterai Mini atau 4 baterai FPV</span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>899<span class="k">.000</span></b><span class="save" data-i18n="sv.time.t60">Hemat Rp99.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="time.t60" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier tier-time">
+              <span class="num" aria-hidden="true">2</span>
+              <div class="name">
+                <span class="tn" data-i18n="tm.t120">2 jam</span>
+                <span class="badges"><span class="pill pill-best" data-i18n="bd.best">Paling hemat</span></span>
+              </div>
+              <div class="air">
+                <span class="air-note" data-i18n="tm.t120.d">Termasuk hingga 3 baterai Mini atau 6 baterai FPV</span>
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>1.499<span class="k">.000</span></b><span class="save" data-i18n="sv.time.t120">Hemat Rp299.000</span></div>
+              <a class="btn btn-line btn-sm book" data-wa-pack="time.t120" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+            </li>
+            <li class="tier tier-time">
+              <span class="num" aria-hidden="true">+1</span>
+              <div class="name">
+                <span class="tn" data-i18n="tm.tx">Tiap jam tambahan</span>
+              </div>
+              <div class="air">
+                
+              </div>
+              <div class="cost"><b><span class="cur">Rp</span>599<span class="k">.000</span></b></div>
+              <span class="book"></span>
+            </li>
+        </ul>
+      </div>
+
+      <div class="fine">
+        <div><p class="mono" data-i18n="pr.fn1h">// Airtime</p><p data-i18n="pr.fn1">Airtime adalah estimasi. Airtime FPV sangat bergantung pada agresivitas manuver di lokasi.</p></div>
+        <div><p class="mono" data-i18n="pr.fn2h">// Transportasi</p><p data-i18n="pr.fn2">Harga belum termasuk transportasi, di dalam maupun di luar Jakarta. Biayanya menyesuaikan jarak lokasi dan disepakati bersama sebelum booking.</p></div>
+        <div><p class="mono" data-i18n="pr.fn3h">// Hemat</p><p data-i18n="pr.fn3">Angka hemat dibandingkan membooking paket Basic berulang kali, atau slot waktu yang lebih pendek dua kali.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUNDLES AND ADD-ONS ============ -->
+  <section class="sec" id="addons" aria-labelledby="adTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="mono sec-eyebrow" data-i18n="ad.eyebrow">// Bundling dan add-on</p>
+          <h2 class="sec-title" id="adTitle">
+            <span class="t-white" data-i18n="ad.h1">Gabung</span>
+            <span class="t-ember" data-i18n="ad.h2">dan hemat</span>
+          </h2>
+        </div>
+        <p class="sec-lead" data-i18n="ad.lead">Untuk event yang butuh kedua jenis drone, atau shooting seharian. Kebutuhan khusus bisa dibicarakan lewat WhatsApp.</p>
+      </div>
+
+      <div class="ways">
+        <article class="way deal deal-feature">
+          <header class="way-top">
+            <span class="pill" data-i18n="ad.hy.tag">Hybrid event</span>
+            <span class="mono">Mini 4 Pro + FPV</span>
+          </header>
+          <p class="figure"><span class="mono" data-i18n="ad.hy.lab">Hemat</span><b>Rp250.000</b></p>
+          <h3 class="way-title" data-i18n="ad.hy.title">Mini 4 Pro + FPV dalam satu job</h3>
+          <p class="way-desc" data-i18n="ad.hy.desc">Booking satu paket cinematic dan satu paket FPV untuk event yang sama, dan total dipotong Rp250.000.</p>
+          <p class="mono eg" data-i18n="ad.hy.ex">Contoh: Extended Rp749.000 + Standard Rp849.000 = Rp1.598.000, menjadi Rp1.348.000</p>
+          <a class="btn btn-line btn-sm book" data-wa-pack="hybrid" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+        </article>
+        <article class="way deal">
+          <header class="way-top">
+            <span class="pill" data-i18n="ad.fd.tag">Full day</span>
+            <span class="mono">4–5 h</span>
+          </header>
+          <p class="figure"><span class="mono" data-i18n="ad.fd.lab">Mulai</span><b><span class="cur">Rp</span>2.199<span class="k">.000</span></b></p>
+          <h3 class="way-title" data-i18n="ad.fd.title">4–5 jam, baterai tanpa batas</h3>
+          <p class="way-desc" data-i18n="ad.fd.desc">Untuk shooting seharian: terbang sebanyak yang dibutuhkan tanpa menghitung baterai.</p>
+          <p class="mono eg" data-i18n="ad.fd.ex">Harga final mengikuti lokasi dan kebutuhan</p>
+          <a class="btn btn-line btn-sm book" data-wa-pack="fullday" href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="pk.book">Booking</a>
+        </article>
+      </div>
+
+      <div class="grp grp-addons">
+        <div class="grp-side">
+          <h3 class="grp-title" data-i18n="ad.x.title">Add-on</h3>
+        </div>
+        <ul class="tiers extras">
+          <li><div class="name"><span class="tn" data-i18n="ad.x1">Baterai tambahan</span><span class="per" data-i18n="ad.x1d">Tambahan airtime di paket mana pun</span></div><div class="cost"><b><span class="cur">Rp</span>249<span class="k">.000</span></b><span class="per" data-i18n="ad.x1u">per buah</span></div></li>
+          <li><div class="name"><span class="tn" data-i18n="ad.x2">Mount action cam</span><span class="per" data-i18n="ad.x2d">Gratis di paket FPV Full Session</span></div><div class="cost"><b><span class="cur">Rp</span>149<span class="k">.000</span></b></div></li>
+          <li><div class="name"><span class="tn" data-i18n="ad.x3">Edit video highlight</span><span class="per" data-i18n="ad.x3d">Footage Anda dirangkai menjadi satu video highlight</span></div><div class="cost"><b><span class="cur">Rp</span>749<span class="k">.000</span></b><span class="per" data-i18n="ad.from">mulai</span></div></li>
+        </ul>
+      </div>
+
+      <div class="both">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6.5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-8l-4 3v-3H5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2z"/></svg>
+        <p data-i18n="ad.custom">Kebutuhan khusus atau lokasi yang sulit? Kirim detailnya dan dapatkan penawaran.</p>
+        <a class="btn btn-line btn-sm" data-wa href="https://wa.me/6285714727038" target="_blank" rel="noopener" data-i18n="svc.ask">Tanya via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ AND TERMS ============ -->
+  <section class="sec" id="faq" aria-labelledby="fqTitle">
+    <div class="wrap">
+      <div class="grp grp-faq">
+        <div class="grp-side">
+          <p class="mono sec-eyebrow" data-i18n="fq.eyebrow">// FAQ dan ketentuan</p>
+          <h2 class="sec-title" id="fqTitle">
+            <span class="t-white" data-i18n="fq.h1">Sebelum</span>
+            <span class="t-ember" data-i18n="fq.h2">booking</span>
+          </h2>
+        </div>
+        <div class="qs">
+          <details class="q" id="faq1" open>
+            <summary><span data-i18n="fq.q1">Bagaimana durasi dihitung?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a1">Di paket baterai, durasi dihitung dari airtime, yaitu waktu terbang bersih. Persiapan di darat tidak memotong durasi yang Anda beli.</p>
+          </details>
+          <details class="q" id="faq2">
+            <summary><span data-i18n="fq.q2">Kenapa airtime FPV bisa berbeda?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a2">Durasi FPV sangat bergantung pada agresivitas manuver di lokasi. Semakin agresif terbangnya, semakin cepat baterai habis, jadi angka sekitar 5 menit per baterai adalah estimasi.</p>
+          </details>
+          <details class="q" id="faq3">
+            <summary><span data-i18n="fq.q3">Bagaimana kalau cuaca buruk?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a3">Pilot berhak menunda atau menjadwalkan ulang penerbangan jika cuaca buruk atau lokasi berisiko tinggi, demi keselamatan.</p>
+          </details>
+          <details class="q" id="faq4">
+            <summary><span data-i18n="fq.q4">Bagaimana cara kerja sewa waktu?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a4">Anda membooking pilot di lokasi selama 30 menit, 1 jam, atau lebih. Waktu yang dibooking tetap dibayar, terbang atau tidak. Setiap slot sudah termasuk sejumlah baterai, dan baterai tambahan Rp249.000 per buah.</p>
+          </details>
+          <details class="q" id="faq5">
+            <summary><span data-i18n="fq.q5">Apakah melayani di luar Jakarta?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a5">Ya, seluruh Indonesia. REFLY × Wendrone berbasis di Jakarta. Harga paket belum termasuk transportasi, baik di dalam maupun di luar Jakarta: biayanya menyesuaikan jarak lokasi dan disepakati bersama sebelum booking.</p>
+          </details>
+          <details class="q" id="faq6">
+            <summary><span data-i18n="fq.q6">Apakah editing sudah termasuk?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a6">Paket mencakup penerbangan dan footage-nya. Edit video highlight tersedia sebagai add-on mulai Rp749.000.</p>
+          </details>
+          <details class="q" id="faq7">
+            <summary><span data-i18n="fq.q7">Bagaimana cara booking?</span><i aria-hidden="true"></i></summary>
+            <p data-i18n="fq.a7">Kirim pesan WhatsApp berisi tanggal, lokasi, dan apa yang ingin direkam. Balasannya berisi paket yang sesuai, biaya transportasi, dan totalnya.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING BAND ============ -->
+  <section class="sec final" id="book" aria-labelledby="ctTitle">
+    <div class="wrap">
+      <div class="final-grid">
+        <h2 class="final-title" id="ctTitle">
+          <span class="t-white" data-i18n="ct.h1">Siap</span>
+          <span class="t-ember" data-i18n="ct.h2">terbang?</span>
+        </h2>
+        <div class="final-side">
+          <p class="sec-lead" data-i18n="ct.lead">Kirim tanggal dan lokasi Anda. Balasannya berisi paket yang pas, biaya transportasi, dan totalnya.</p>
+          <a class="btn btn-ember" data-wa href="https://wa.me/6285714727038" target="_blank" rel="noopener">
+            <span data-i18n="hero.cta">Booking via WhatsApp</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <p class="mono contact">WhatsApp <span class="num" id="waNumber">+62 857-1472-7038</span> <button type="button" class="copy-btn" id="copyBtn" data-i18n="ct.copy">Salin nomor</button></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot paper">
+  <div class="wrap foot-row">
+    <a class="brand" href="#home" aria-label="REFLY × Wendrone">
+      <span class="brand-mark"><img src="assets/logo-mark.webp" alt="" width="36" height="36"></span>
+      <span class="brand-name">REFLY <span>× Wendrone</span></span>
+    </a>
+    <p class="mono" data-i18n="ft.base">Berbasis di Jakarta, melayani seluruh Indonesia</p>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#services" data-i18n="nav.services">Layanan</a>
+      <a href="#pricing" data-i18n="nav.pricing">Harga</a>
+      <a href="#addons" data-i18n="nav.addons">Bundling</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+    <p class="mono">© 2026 REFLY × Wendrone</p>
+  </div>
+</footer>

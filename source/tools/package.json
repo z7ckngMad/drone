@@ -1,0 +1,13 @@
+{
+  "name": "refly-model-tools",
+  "private": true,
+  "description": "Slims the owner's drone GLB files for the website. Not part of the site.",
+  "dependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "draco3dgltf": "^1.5.7",
+    "meshoptimizer": "^1.3.0",
+    "sharp": "^0.35.5"
+  }
+}
